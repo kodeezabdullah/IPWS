@@ -1,0 +1,81 @@
+/* Custom component styles - Azerbaijan healthcare project theme */
+
+/* Glassmorphic panel styling */
+.panel-glass {
+  background-color: rgba(10, 22, 40, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 150, 200, 0.2);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.panel-glass-light {
+  background-color: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 150, 200, 0.25);
+}
+
+.panel-glass-dark {
+  background-color: rgba(10, 22, 40, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 150, 200, 0.2);
+}
+
+/* Card styling */
+.card {
+  background-color: rgba(10, 22, 40, 0.95);
+  border: 1px solid rgba(100, 150, 200, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Button styling */
+.button-primary {
+  background-color: rgba(50, 150, 200, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(50, 150, 200, 0.4);
+  transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+  transform: scale(1.05);
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: rgba(10, 22, 40, 0.98);
+  border-right: 1px solid rgba(100, 150, 200, 0.2);
+}
+
+/* Header styling */
+.header {
+  background: linear-gradient(180deg, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.7) 100%);
+  border-bottom: 1px solid rgba(100, 150, 200, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Text colors */
+.text-muted {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-secondary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Golden accent */
+.text-golden {
+  color: #FFD700;
+}
+
+.border-golden {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+

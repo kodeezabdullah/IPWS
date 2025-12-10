@@ -1,0 +1,72 @@
+/* Custom utility classes */
+
+.text-gradient {
+  /* Custom gradient text */
+}
+
+.glass-effect {
+  /* Glassmorphism effect */
+}
+
+.custom-shadow {
+  /* Custom shadow utilities */
+}
+
+/* Custom Scrollbar - Dark Mode */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 150, 200, 0.5) rgba(30, 40, 60, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(30, 40, 60, 0.5);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 150, 200, 0.5);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 150, 200, 0.8);
+}
+
+/* Custom Scrollbar - Light Mode */
+[data-theme="light"] .custom-scrollbar {
+  scrollbar-color: rgba(59, 130, 246, 0.5) rgba(229, 231, 235, 0.5);
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(229, 231, 235, 0.5);
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.8);
+}
+
+/* Notification Animations */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+

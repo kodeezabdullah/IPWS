@@ -1,0 +1,65 @@
+/* Custom CSS variables - Azerbaijan healthcare project theme */
+
+:root {
+  /* Background colors - Dark blue/navy theme */
+  --color-background-primary: #0a1628;
+  --color-background-secondary: #0a1628;
+  --color-background-tertiary: #1a1d2e;
+  --color-background-dark: #0a0e1a;
+
+  /* Panel and card backgrounds - Semi-transparent with blur */
+  --color-panel-bg: rgba(10, 22, 40, 0.95);
+  --color-panel-bg-light: rgba(10, 22, 40, 0.92);
+  --color-panel-bg-dark: rgba(10, 22, 40, 0.98);
+
+  /* Border colors */
+  --color-border-primary: rgba(100, 150, 200, 0.2);
+  --color-border-secondary: rgba(100, 150, 200, 0.25);
+  --color-border-accent: rgba(100, 150, 200, 0.3);
+
+  /* Accent colors */
+  --color-primary: #4A90E2;
+  --color-secondary: #64748b;
+  --color-foreground: #ffffff;
+  --color-golden: #FFD700;
+  --color-golden-glow: rgba(255, 215, 0, 0.3);
+
+  /* Department/category colors */
+  --color-cardiology: #4A90E2;
+  --color-gynecology: #E91E63;
+  --color-oncology: #9C27B0;
+  --color-surgery: #F44336;
+  --color-neurology: #FF9800;
+  --color-pediatrics: #4CAF50;
+
+  /* Risk tier colors (water level monitoring) */
+  --color-risk-yellow: #fbbf24;
+  --color-risk-orange: #f97316;
+  --color-risk-dark-orange: #ea580c;
+  --color-risk-red: #dc2626;
+
+  /* Text colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.8);
+  --color-text-tertiary: rgba(255, 255, 255, 0.6);
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+
+  /* Glassmorphism effect */
+  --backdrop-blur: blur(10px);
+  --backdrop-blur-strong: blur(20px);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+  /* Dark theme inherits root variables */
+}
+
+[data-theme="light"] {
+  /* Light theme - not used in this project */
+}
+

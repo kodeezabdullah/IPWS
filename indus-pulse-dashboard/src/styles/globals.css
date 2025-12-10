@@ -1,0 +1,166 @@
+/* Import custom styles first */
+@import './custom/variables.css';
+@import './custom/components.css';
+@import './custom/utilities.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for Indus Pulse Warning System */
+
+:root[data-theme="dark"] {
+  --bg-primary: #0a1628;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1f2937;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #374151;
+  --border-color-light: rgba(255, 255, 255, 0.1);
+  --hover-bg: #374151;
+  --card-bg: #1f2937;
+}
+
+:root[data-theme="light"] {
+  --bg-primary: #f3f4f6;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --border-color-light: rgba(0, 0, 0, 0.1);
+  --hover-bg: #f3f4f6;
+  --card-bg: #ffffff;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Light mode text colors */
+  [data-theme="light"] {
+    color: var(--text-primary);
+  }
+
+  [data-theme="light"] .text-white {
+    color: #111827 !important;
+  }
+
+  [data-theme="light"] .text-gray-400 {
+    color: #6b7280 !important;
+  }
+
+  [data-theme="light"] .text-gray-500 {
+    color: #6b7280 !important;
+  }
+
+  [data-theme="light"] .bg-gray-900 {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb;
+  }
+
+  [data-theme="light"] .bg-gray-800 {
+    background-color: #f9fafb !important;
+    border-color: #e5e7eb;
+  }
+
+  [data-theme="light"] .bg-gray-700 {
+    background-color: #f3f4f6 !important;
+  }
+
+  [data-theme="light"] .border-gray-800 {
+    border-color: #e5e7eb !important;
+  }
+
+  [data-theme="light"] .border-gray-700 {
+    border-color: #e5e7eb !important;
+  }
+
+  [data-theme="light"] .hover\:bg-gray-800:hover {
+    background-color: #f3f4f6 !important;
+  }
+
+  [data-theme="light"] .hover\:bg-gray-700:hover {
+    background-color: #e5e7eb !important;
+  }
+
+  /* Sidebar in light mode */
+  [data-theme="light"] .bg-gray-900.border-r {
+    background-color: #ffffff !important;
+    border-right-color: #e5e7eb !important;
+  }
+
+  /* Map container in light mode */
+  [data-theme="light"] .mapboxgl-map,
+  [data-theme="light"] .maplibregl-map {
+    background-color: #f3f4f6 !important;
+  }
+
+  /* Dropdowns and modals in light mode */
+  [data-theme="light"] .bg-gray-800.shadow-2xl,
+  [data-theme="light"] .bg-gray-800.rounded-lg {
+    background-color: #ffffff !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  }
+
+  /* Buttons and interactive elements */
+  [data-theme="light"] button:hover {
+    background-color: #f3f4f6 !important;
+  }
+
+  /* Chart containers */
+  [data-theme="light"] .bg-gray-900.rounded-xl {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Stats and metric cards */
+  [data-theme="light"] .bg-blue-900\/30 {
+    background-color: rgba(59, 130, 246, 0.1) !important;
+  }
+
+  [data-theme="light"] .border-blue-700\/50 {
+    border-color: rgba(59, 130, 246, 0.3) !important;
+  }
+
+  [data-theme="light"] .text-blue-300 {
+    color: #2563eb !important;
+  }
+
+  /* Alert and notification items */
+  [data-theme="light"] .hover\:bg-gray-700\/50:hover {
+    background-color: #f9fafb !important;
+  }
+
+  [data-theme="light"] .divide-gray-700 > * + * {
+    border-color: #e5e7eb !important;
+  }
+
+  /* Icon colors in light mode */
+  [data-theme="light"] svg {
+    color: var(--text-primary);
+  }
+
+  /* Preserve accent colors in light mode */
+  [data-theme="light"] .text-red-400,
+  [data-theme="light"] .text-orange-400,
+  [data-theme="light"] .text-orange-600,
+  [data-theme="light"] .text-yellow-400,
+  [data-theme="light"] .text-green-400,
+  [data-theme="light"] .text-blue-400 {
+    /* Keep these colors as they are for status indicators */
+  }
+}
+
+@layer components {
+  /* Component-specific styles will be imported from custom folder */
+}
+
+@layer utilities {
+  /* Custom utility classes will be imported from custom folder */
+}
+
