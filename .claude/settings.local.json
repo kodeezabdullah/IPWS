@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"D:\\IPWS\\indus-pulse-dashboard\\src\"/**/*.{ts,tsx})",
+      "Bash(npm run build:*)"
+    ]
+  }
+}
